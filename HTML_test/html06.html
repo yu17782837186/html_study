@@ -1,0 +1,172 @@
+<html>
+	<head>
+		<title>我的表格标签认识</title>
+		<meta charset="utf-8"/>
+		<!--表格标签学习：
+			一键生成多个表格table>tr*4>td*5 table
+			table：声明一个表格
+			
+				tr(行)：声明一行 设置行高也就是单元格的高度 单元格的宽度就是列宽
+					th(单元格):声明一个单元格 表头格 默认居中加黑显示
+					td(单元格)：声明一个单元格 默认居左显示原始数据
+			属性：
+				border:给表格添加边框 根据数据的大小进行表格的大小显示
+				width:设置宽度 
+				height:设置高度
+				cellpadding:设置内容距离边框的距离
+				cellspacing:设置边框的大小
+		-->
+	</head>
+	<body>
+		<h3>表格标签的认识</h3>
+		<hr />
+		<table border="1px" width="400px" height="300px">
+			<tr>
+				<th>科目</th>  <!--一个单元格-->
+				<th>分数</th>
+				<th>级别</th>
+				<th>说明</th>
+			</tr>    <!--一行-->
+			<tr>
+				<td>java</td>
+				<td>100</td>
+				<td>6</td>
+				<td>面向对象</td>
+			</tr>
+			<tr>
+				<td>c语言</td>
+				<td>99</td>
+				<td>8</td>
+				<td>面向过程</td>
+			</tr>
+		</table>
+		
+		
+		<hr />
+		<table border="1px">
+			<tr height="50px">
+				<td width="50px">科目</td>
+				<td width="50px">级别</td>
+				<td width="50px">分数</td>
+				<td width="50px">说明</td>
+			</tr>
+			<tr height="50px">
+				<td>高数</td>
+				<td>8</td>
+				<td>100</td>
+				<td>简单</td>
+			</tr>
+			<tr height="50px">
+				<td>英语</td>
+				<td>8</td>
+				<td>100</td>
+				<td>简单</td>
+			</tr>
+		</table>
+		
+		
+		<hr width="1000px" color="black"/>
+		<table border="1px" cellpadding="30px" cellspacing="0px">
+			<tr height="60px">
+				<th width="60px">科目</th>
+				<th width="60px">分数</th>
+				<th width="60px">级别</th>
+				<th width="60px">说明</th>
+			</tr>
+			<tr height="60px">
+				<td align="center">语文</td>
+				<td align="center">100</td>
+				<td align="center">8</td>
+				<td align="center">简单</td>
+			</tr>
+			<tr height="60px">
+				<td align="center">物理</td>
+				<td align="center">100</td>
+				<td align="center">8</td>
+				<td align="center">简单</td>
+			</tr>
+		</table>
+				
+		<h4>熟悉表格</h4>
+		<hr width="1000px" color="cornflowerblue"/>
+		<table border="1px" cellpadding="0px" cellspacing="0px">
+			<tr height="70px">
+				<th width="70px">姓名</th>
+				<th width="70px">年龄</th>
+				<th width="70px">爱好</th>
+				<th width="70px">性别</th>
+			</tr>
+			<tr height="70px">
+				<td align="center">余小浩</td>
+				<td align="center">18</td>
+				<td align="center">上网</td>
+				<td align="center">男</td>
+			</tr>
+			<tr height="70px">
+				<td align="center">余8浩</td>
+				<td align="center">18</td>
+				<td align="center">篮球</td>
+				<td align="center">男</td>
+			</tr>
+		</table>
+				
+		<h3>单元表格的合并</h3>
+		<hr width="1000px" color="darkred"/>
+		<table border="1px" cellspacing="0px">
+			<tr height="40px">
+				<td width="40px"></td>
+				<td width="40px"></td>
+				<td width="40px"></td>
+				<td width="40px"></td>
+				<td width="40px"></td>
+			</tr>
+			<tr height="40px">
+				<td colspan="2"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr height="40px">
+				<td></td>
+				<td></td>
+				<td rowspan="2"></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr height="40px">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		
+		<h4>单元格的合并2</h4>
+		<hr width="1000px" color="burlywood"/>
+		<table border="1px" cellspacing="0px">
+			<tr height="45px">
+				<td width="45px" colspan=""></td>
+				<td width="45px"></td>
+				<td width="45px"></td>
+				<td width="90px" colspan="2" rowspan="2"></td>
+			</tr>
+			<tr height="45px">
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr height="45px">
+				<td colspan="2"></td>
+				<td rowspan="2"></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr height="45px">
+				<td></td>
+				<td></td>		
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>

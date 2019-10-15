@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>我的超链接网页跳转</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<h3>超链接标签学习</h3>
+		<hr />
+		<!--a标签--超链接标签 
+			属性herf：要跳转的网页资源路径  本地资源
+			属性target:指明要跳转的网页资源的显示位置
+					_self 在当前页面中刷新显示
+					_blank 在新的标签页面中显示
+					_top 在顶层页面中显示
+					_parent 在父级页面中显示
+					
+			锚点：在当前网页内跳转
+			先使用超链接标签在指定的网页位置增加锚点，格式为：
+				<a name"锚点名" ></a>
+			使用a标签可以跳转指定的锚点，达到网页内部资源跳转的目的，格式
+				<a herf="#锚点名" >访问方式</a>
+		-->
+		<a href="html04.html" target="_parent">跳转到html04</a><br />
+		<a href="html03.html" target="_top">跳转到html03</a><br />
+		<a href="html02.html" target="_blank">跳转到html02</a><br />
+		<a href="html01.html" target="_blank">跳转到html01</a><br />
+		<h4>本地资源</h4>
+		<a href="html04.html"><img src="img/3.gif" height="100px"/></a>
+		<hr />
+		<h4>网络资源</h4>
+		<a href="http://www.jd.com">进入京东</a><br />
+		<a href="http://www.taobao.com">进入淘宝</a>
+		<hr />
+		<h4>锚点的认识</h4>
+		<a href="锚点的认识.html">锚点的认识</a>
+	</body>
+</html>
